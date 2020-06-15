@@ -1,0 +1,30 @@
+alineación
+en bootstrap se trabaja en flex box
+
+
+sintaxis
+eje - modo - ubicación
+
+eje:
+
+    main axis --- horizontal -- justify
+    cross axis--- vertical --  align
+ 
+modo:
+
+content ---> para alinear de forma grupal
+items   ---> para alinear línea por línea
+self    ---> de forma Individual
+
+ubicación:
+main axis es horizontal
+    justify-start
+    justify-center
+    justify-end
+    justify-around (alrededor)
+    justify-between (entre)
+cross axis es vertical
+    align-start
+    align-center
+    align-end
+
