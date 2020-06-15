@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style type="text/css">
+        #principal {
+            padding: 30;
+            color: darkslategrey;
+          }
+    </style>
+</head>
+<body>
+    <h1 id="principal">TITULO PRINCIPAL</h1>
+    <h2 class="subtitulo1">subtitulo</h2>
+    <H3>subtitulo del subtitulo</H3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quod, <strong>HOLA</strong> error ad possimus cupiditate deleniti hic aspernatur molestiae amet nam sint nostrum perspiciatis. Nobis amet itaque voluptatum officiis necessitatibus modi.</p>
+   <br>
+   <!-- para ingresar imagenes width ancho, height alto -->
+   <img src="img/lapiz.ico" width="180" alt="">
+<div class="contenedor">
+   <div class="caja-1">
+       caja 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, exercitationem. Dolorum nesciunt minima laboriosam odio quibusdam nisi natus aut animi? Placeat maiores ullam dolorum corrupti iste ad totam ipsa reprehenderit.
+    </div>  <br>
+
+
+    <!-- para hacer un enlace con otra pagina  -->
+    <!-- enlace en la misma pestaña  -->
+    <a href="index_dos.html">mas info</a>    
+    <!-- para hacer el enlace en una pestaña nueva  -->
+    <a href="index_dos.html" target="_blank"> mas info nueva pestaña</a> 
+    <section>
+    
+    <h3>esta es una sección</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cum voluptas ullam ipsa provident facilis doloremque aspernatur nulla corrupti, eius saepe dolorum quae tempore et est libero accusamus laudantium mollitia.</section>
+</div>
+    <article>
+       <h2>article : es un contenido individual</h2>
+        <div class="caja-2"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ducimus quibusdam provident tempore earum ea adipisci autem laudantium nisi nobis, sint sunt consectetur iste tenetur, sed illum repudiandae at consequatur? 
+            </div><br>
+    <CITE>esto es para una noticia o algo distinto</CITE>    
+    </article>
+    <a href="img/lapiz.ico" target="_blank"> ver imagen</a> 
+
+    <!-- listas -->
+<!-- lista desordenada ul  -->
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<!-- lista ordenada -->
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ol>
+
+<!-- tablas  -->
+<!-- para poner un comentario ctrl+} -->
+
+<table>
+    <!-- thead bloque de filas que describen las columnas -->
+    <thead>
+        <!-- tr filas -->
+        <tr>
+            <!-- th titulo de encabezados -->
+          <th>nombre</th>
+          <th>ciudad</th>
+          <th>edad</th>  
+        </tr>
+    </thead>
+        <!-- tbody se utiliza para tener anidadas las celdas -->
+    <tbody>
+        <tr>
+            <td>victor</td>
+            <td>la paz</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Enrique</td>
+            <td>Bogotá</td>
+            <td>44</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+        <!-- formularios -->
+        <!-- action sirve para mandar los datos ingresados a otro archivo ideal .php -->
+    <form action="archivo.php">
+    <div>
+    <!-- label para ingresar etiquetas, se utiliza for para enlazar los datos-->
+     <label for="nombre">NOMBRE: </label>
+     <!-- input para poder ingresar datos mediante teclado , se utiliza name para poder enlazar los datos-->
+     <!-- placeholder sirve para ingresar un texto de ayuda  -->
+     <input type="text" name="nombre" placeholder="nombre" id="nombre">
+    <!-- div, contendedor generico, ideal encerrar con div para dar mejor formato -->
+    </div>
+    <br>
+    <div>
+    
+     <label for="apellido">APELLIDO: </label>
+    <input type="text" name="apellido" placeholder="apellido" id="apellido">
+    </div>
+    <br>
+    <div>
+        <label for="telefono">TELÉFONO: </label>
+        <!-- maxlength se utiliza para dar un numero de digitos como limite para ingresar  -->
+        <!-- number sólo permite ingresar numeros -->
+        <input type="number" name="telefono" maxlength="10" placeholder="Teléfono" id="telefono">
+    </div>
+    <br>
+    <div>
+        <label for="contraseña">CONTRASEÑA:</label>
+        <!-- type password, para utilizar en los campos de contraseña  -->
+        <input type="password" name="contraseña" placeholder="contraseña" id="contraseña">
+    </div>
+    <br>
+    <div>
+        <label for="genero">GÉNERO: </label>
+        <br>
+        <input type="radio">HOMBRE
+        <input type="radio">MUJER
+    </div>
+    <br>
+    <div>
+        <label for="mensaje">MENSAJE: </label>
+        <!-- textarea cuadro multilinea, rows filas, cols, columnas  -->
+
+        <textarea name="mensaje" placeholder="ingresa un comentario" id="mensaje" cols="40" rows="4"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="edad">EDAD:</label>
+        <!-- value se puede dar un valor que puede ser cambiado -->
+        <input type="text" name="edad" maxlength="2" value="25" id="edad">
+    </div>
+    <br>
+    <div>
+        <label for="fecha">FECHA DE NACIMIENTO: </label>
+        <input type="date" name="fecha" id="fecha">
+    </div>
+    <br>
+    <div>
+        <label for="selecmul">SELECCIONAR UNA MATERIA: </label>
+        <select name="selecmul" id="">
+            <option value="calculo 1">CALCULO 1</option>
+            <option value="fisica">FISICA</option>
+            <option value="quimica">QUIMICA</option>
+            <option value="redes">REDES</option>
+            <option value="programacion">PROGRAMACION</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <!-- submit sirve para enviar datos, button no hace nada habría que programarlo -->
+        <input type="submit" value="ENVIAR">
+        <input type="button" value="ENVIAR">
+    </div>
+</form>
+    
+    
+    <footer>Esta página es creada por Enrique Davila</footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+body
+{
+	background: yellow;
+}
+ul
+{
+	margin:80px;
+	font-size: 20px;
+	list-style-image:url(lapiz.ico) width="10px";
+	
+}

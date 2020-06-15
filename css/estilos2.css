@@ -1,0 +1,70 @@
+body {
+    background-color: aquamarine;
+}
+
+/*static conserva la posición fija, se adpata segun las circunstancias*/
+/*
+.estatico {
+    position: static;
+    font-size: 30px;
+    border: 2px red solid;
+    padding: 15px;
+}
+*/
+/*al utilizar relative y left se pierde el margen del lado derecho en algunos elementos, puede servirnos como una caja padre*/
+/*
+.relativo {
+    position: relative;
+    font-size: 30px;
+    border: 2px blue dotted;
+    padding: 20px;
+    left: 20px;
+}
+*/
+/*fixed, mantiene un objeto fijo en una posición, sobre todo*/
+/* h1{
+    position: fixed;
+    font-size: 60px;
+    border: 2px red solid;
+    color: whitesmoke;
+    background-color: brown;
+    width: 200px;
+    text-align: center;
+}
+p{
+    font-size: 30px;
+    
+} */
+
+/*  absolut   */
+/*
+.contenedor
+{
+    border:  2px red solid;
+    width:90%;
+    height: 400px;
+    margin-top: 30px;
+    position: relative;
+    box-sizing: border-box;
+}
+.contenedor h1 {
+    position: absolute;
+    top:50%;
+    left:50%;    
+}
+.contenedor h2 {
+    position: absolute;
+    top:30%;
+    left: 40%;
+}
+
+*/
+
+/* listas menus  */
+
+ul {
+    font-size: 120px;
+    margin: 40px;
+    list-style-image: url(instagram32.png);
+
+}
