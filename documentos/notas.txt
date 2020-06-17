@@ -62,3 +62,36 @@ rounded-0
 FLOAT Y CLEARFIX
 float-direccion (left/right/none)
 float - tamaño (sm/md/lg/xl) - direccion (left/right/none)
+
+DISPLAY
+d-tipo (inline/block/none)
+d-tamaño(sm/md/lg/xl)-tipo (inline/block/none)
+
+none, hace que el elemento desaparezca de  la pantalla
+inline, convierte el elemento en tipo en linea
+block, convierte el elemento en tipo bloque
+
+EMBED
+INCRUSTAR UNA PÁGINA DENTRO DE OTRA PAGINA, EJEMPLO UN VIDEO DE YOUTUBE
+EN LA CLASE DEL ELEMNTO PADRE (DIV) COLOCAR 
+class="embed-responsive embed-responsive-16by9"
+puede ser(21by9/16by9/4by3/1by1), que son los tamaños de pantallas.
+
+en el elemento hijo que generalmente es un iframe, COLOCAR
+class="embed-responsive-item"
+en el elemento hijo va todo el codigo que se saca de youtube, en compartir <> insertar.
+
+BOTON CIERRE
+dentro de un button
+class="close"
+aria-label="Close"
+
+dentro del button se pone un span con el texto del ícono
+<span> &times; </span>
+
+TEXTO
+    ALINEACION
+text-direccion (left/center/right/justify)
+text-pantalla-direccion(sm/md/lg/xl)
+    TRANSFORMACION
+text-transformacion(lowercase/uppercase/capitalize)
