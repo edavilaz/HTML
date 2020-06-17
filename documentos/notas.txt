@@ -27,4 +27,38 @@ cross axis es vertical
     align-start
     align-center
     align-end
+DESPLAZAMIENTO (COLUMNAS)
+OFFSET - TAMAÑO(opcional) - NÚMERO (columnas que se movera de 1 A 12)
+margin- ml-cantidad  o auto(la columna se desplaza en sentido contrario)
+margin -mr- auto
 
+REORDENAMIENTO (COLUMNAS)
+
+ORDER - TAMAÑO (OPCIONAL sm-md-lg-xl)- NUMERO (1 A 12)
+
+TODOS los elementos o etiquetas tienen el valor order:0; por defecto.Aparecen en el orden que se los crea.
+
+COLORES:
+bg- color(primary/secondary/danger/white/info/light/dark/warning/success/transparent)
+text-color
+
+BORDES
+border (encierra todo el elmento)
+border-lado(top/right/bottom/left)
+
+ELIMINAR BORDES
+border-0
+border-lado-0 (en lado: top/right/bottom/left)
+
+BORDES REDONDEADOS
+rounded (un pequeño borde curvo a todo el elemento)
+rounded circle (circulo cumpleto)
+rounded pill (tipo pildora ideal en elemento rectangulares, sino circulo)
+rounded-lado (top/right/bottom/left)
+
+ELIMINAR BORDES REDONDEADOS
+rounded-0
+
+FLOAT Y CLEARFIX
+float-direccion (left/right/none)
+float - tamaño (sm/md/lg/xl) - direccion (left/right/none)
