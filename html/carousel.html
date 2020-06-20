@@ -6,29 +6,36 @@
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <!-- Bootstrap CSS -->
         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
-        <title>Breadcrumbs</title>
+        <title>Carousel</title>
     </head>
     <body>
         <div class="container">
             <div class="row row-cols-1">
-                <h1 class="text-center">Breadcrumbs</h1>
+                <h1 class="text-center">Carousel</h1>
                 <hr>
-                <!-- breadcrumbs -->
-                <nav>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Inicio</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#">Fotografía</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                            Destacado de Fotografía
-                        </li>
-                    </ol>
-                </nav>
+                <!-- Carousel -->
+                <!-- clase slide para que pase todas las diapositivas -->
+                <!-- carousel-fade cambia efecto de transicion  -->
+                <div class="carousel slide carousel-fade" id="carousel01" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- DIAPOSITIVA # 1 -->
+                        <!-- data-interval en ms tiempo que se muestra -->
+                        <div class="carousel-item active" data-interval="500">
+                            <img src="../img/gato4.jpg" alt="gato" class="d-block w-100">
+                        </div>
+                        <!-- DIAPOSITIVA # 2 -->
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="../img/perro.jpg" alt="perro" class="d-block w-100">
+                        </div>
+                        <!-- DIAPOSITIVA # 3 -->
+                        <div class="carousel-item" data-interval="5000">
+                            <img src="../img/base.png" alt="base" class="d-block w-100">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>        
+        </div>
 
 
 
