@@ -7,6 +7,14 @@
         <!-- Bootstrap CSS -->
         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
         <title>Carousel</title>
+        <style>
+            .carousel-indicators li{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: yellow;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -32,7 +40,141 @@
                             <img src="../img/base.png" alt="base" class="d-block w-100">
                         </div>
                     </div>
-
+<hr>
+                </div>
+                <!-- Carousel #2-->
+                <!-- clase slide para que pase todas las diapositivas -->
+                <!-- carousel-fade cambia efecto de transicion  -->
+                <div class="carousel slide carousel-fade" id="carousel02" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- DIAPOSITIVA # 1 -->
+                        <!-- data-interval en ms tiempo que se muestra -->
+                        <div class="carousel-item active" data-interval="500">
+                            <img src="../img/gato4.jpg" alt="gato" class="d-block w-100">
+                        </div>
+                        <!-- DIAPOSITIVA # 2 -->
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="../img/perro.jpg" alt="perro" class="d-block w-100">
+                        </div>
+                        <!-- DIAPOSITIVA # 3 -->
+                        <div class="carousel-item" data-interval="5000">
+                            <img src="../img/base.png" alt="base" class="d-block w-100">
+                        </div>
+                    </div>
+                    <!-- controles -->
+                    <!-- ANTES -->
+                    <!-- se coloca el id del corousel en href PARA QUE CONTROLE -->
+                    <a href="#carousel02" class="carousel-control-prev" data-slide="prev">
+                        <!-- span la misma clase pero con -icon -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                        </span>
+                        <span class="sr-only">Anterior</span>        
+                    </a>
+                    <!-- DESPUÉS -->
+                    <a href="#carousel02" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                        </span>
+                        <span class="sr-only">Siguiente</span>    
+                    </a>
+                </div>
+                <hr>
+        <!-- Carousel #3-->
+                <!-- clase slide para que pase todas las diapositivas -->
+                <!-- carousel-fade cambia efecto de transicion  -->
+                <div class="carousel slide carousel-fade" id="carousel03" data-ride="carousel">
+                    <!-- INDICADORES -->
+                    <!-- se #li = # de dispositivas -->
+                    <!-- class active al li que apunta a la diapositiva active -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel03" data-slide-to="0" class="active"> </li>
+                        <li data-target="#carousel03" data-slide-to="1"></li>
+                        <li data-target="#carousel03" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- DIAPOSITIVA # 1 -->
+                        <!-- data-interval en ms tiempo que se muestra -->
+                        <div class="carousel-item active" data-interval="500">
+                            <img src="../img/gato4.jpg" alt="gato" class="d-block w-100">
+                        </div>
+                        <!-- DIAPOSITIVA # 2 -->
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="../img/perro.jpg" alt="perro" class="d-block w-100">
+                        </div>
+                        <!-- DIAPOSITIVA # 3 -->
+                        <div class="carousel-item" data-interval="5000">
+                            <img src="../img/base.png" alt="base" class="d-block w-100">
+                        </div>
+                    </div>
+                <!-- controles -->
+                    <!-- ANTES -->
+                    <!-- se coloca el id del corousel en href PARA QUE CONTROLE -->
+                    <a href="#carousel03" class="carousel-control-prev" data-slide="prev">
+                        <!-- span la misma clase pero con -icon -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                        </span>
+                        <span class="sr-only">Anterior</span>        
+                    </a>
+                    <!-- DESPUÉS -->
+                    <a href="#carousel03" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                        </span>
+                        <span class="sr-only">Siguiente</span>    
+                    </a>
+                </div>
+        <!-- Carousel #4-->
+                <!-- clase slide para que pase todas las diapositivas -->
+                <!-- carousel-fade cambia efecto de transicion  -->
+                <div class="carousel slide carousel-fade" id="carousel04" data-ride="carousel">
+                    <!-- INDICADORES -->
+                    <!-- se #li = # de dispositivas -->
+                    <!-- class active al li que apunta a la diapositiva active -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel04" data-slide-to="0" class="active"> </li>
+                        <li data-target="#carousel04" data-slide-to="1"></li>
+                        <li data-target="#carousel04" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- DIAPOSITIVA # 1 -->
+                        <!-- data-interval en ms tiempo que se muestra -->
+                        <div class="carousel-item active" data-interval="500">
+                            <img src="../img/gato4.jpg" alt="gato" class="d-block w-100">
+                        </div>
+                        <div class="carousel-caption">
+                            <h2>Gato</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorem, animi autem consectetur nihil magni? </p>
+                        </div>
+                        <!-- DIAPOSITIVA # 2 -->
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="../img/perro.jpg" alt="perro" class="d-block w-100">
+                        </div>
+                        <div class="carousel-caption">
+                            <h2>Perro</h2>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorem, animi autem consectetur nihil magni? </p>
+                        </div>
+                        <!-- DIAPOSITIVA # 3 -->
+                        <div class="carousel-item" data-interval="5000">
+                            <img src="../img/base.png" alt="base" class="d-block w-100">
+                        </div>
+                        <div class="carousel-caption">
+                            <h2>Logo</h2>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorem, animi autem consectetur nihil magni? </p>
+                        </div>
+                    </div>
+                    <!-- controles -->
+                    <!-- ANTES -->
+                    <!-- se coloca el id del corousel en href PARA QUE CONTROLE -->
+                    <a href="#carousel04" class="carousel-control-prev" data-slide="prev">
+                        <!-- span la misma clase pero con -icon -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                        </span>
+                        <span class="sr-only">Anterior</span>        
+                    </a>
+                    <!-- DESPUÉS -->
+                    <a href="#carousel04" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                        </span>
+                        <span class="sr-only">Siguiente</span>    
+                    </a>
                 </div>
             </div>
         </div>
